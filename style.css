@@ -185,3 +185,23 @@ cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier functi
         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
 }
+
+.animation5 {
+    animation-name: animation5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+}
+
+@keyframes animation5 {
+    50% {
+        background-color: orange;
+    }
+    100% {
+        border-radius: 0%;
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+    }
+}
