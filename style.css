@@ -32,9 +32,30 @@ cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier functi
 .transition1 {
     transition: width 2s, height 2s;
     transition-timing-function: ease;
+    transition-delay: 1s;
 }
 
 .transition1:hover {
     width: 100%;
     height: 100%;
+}
+
+.transition2 {
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.transition2:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+.transition3 {
+    transition: width 2s, height 2s, transform 4s;
+}
+
+.transition3:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotateX(20deg) rotateY(60deg) rotateZ(30deg);
 }
